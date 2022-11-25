@@ -1,5 +1,5 @@
 import pandas as pd
-import csv
+import tdqm.auto as tdqm
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from transformers import AutoTokenizer, AutoModel
@@ -9,22 +9,6 @@ tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased
 modelo = AutoModelForSequenceClassification.from_pretrained(path)
 
 df = pd.read_csv('olist_reviews.csv')
-with open('olist_reviews.csv', encoding='Latin1') as f:
-    reader = csv.reader(f, delimiter=',', quotechar='\"')
-    corpus = list(reader)
-
-    header, corpus = corpus[0], corpus[1:]
-
-reviews = [w[20] for w in corpus]
-ratings = [2 if w[19] in ['4', '5'] else 0 if w[19] in ['1', '2'] else 1 for w in corpus]
-data = [{'X': review, 'y': rating} for (review, rating) in zip(reviews, ratings)]
-dic = {'X': [], 'y': []}
-
-for n in data:
-   dic['X'].append(n['X'])
-   dic['y'].append(n['y'])
-
-data = pd.DataFrame.from_dict(dic)
 
 results = {'sig_neg': [],
            'sig_neu': [],
@@ -34,8 +18,8 @@ results = {'sig_neg': [],
            'prob_pos': [],
            'sentiment': []}
 
-for index, row in data.iterrows():
-   texts, labels = row['X'], [row['y']]
+for index, row in tqdm(df.iterrows(), total=len(df)):
+   texts, labels = row['review_comment_message'], [row['review_score']]
    encoded_text = tokenizer(texts, return_tensors='pt')
    output = modelo(**encoded_text)
    scores = output[0][0].detach()
@@ -55,5 +39,11 @@ for index, row in data.iterrows():
 
 results = pd.DataFrame.from_dict(results)
 results_df = pd.concat([df, results], axis=1)
+
+dicio = {0: 'Negative',
+         1: 'Neutral',
+         2: 'Positive'}
+
+results_df['sentiment'] = results_df['sentiment'].replace(dicio)
 
 results_df.to_csv('olist_model_results.csv', index=False)
