@@ -68,7 +68,21 @@ The features of this dataset present information about:
 
 ## **Model**
 
-There are various techniques and algorithms used for sentiment analysis, including rule-based approaches and machine learning algorithms like Naive Bayes, SVM, and deep learning models like BERT and LSTM. But in this project the model choosed was the [BERTimbau - Portuguese BERT](https://github.com/neuralmind-ai/portuguese-bert)
+There are various techniques and algorithms used for sentiment analysis, including rule-based approaches and machine learning algorithms like Naive Bayes, SVM, and deep learning models like BERT and LSTM. But in this project the model choosed was a pretrained BERT algorithm.
+
+### **BERT**
+
+BERT (Bidirectional Encoder Representations from Transformers) is a deep learning neural network architecture that was trained on a massive amount of text data and has achieved state-of-the-art results in various natural language processing tasks, including sentiment analysis. There are several reasons why BERT is well and widely-used for sentiment analysis:
+
+- **Pre-training:** BERT is pre-trained on a massive amount of text data, which means that it already has a good understanding of the context and meaning of words in a sentence. This pre-training allows BERT to quickly adapt to new text data for sentiment analysis tasks.
+
+- **Bidirectional Encoder:** BERT uses a bidirectional encoder, which means that it considers the context of words from both the left and right sides of a word. This makes BERT more effective at understanding the meaning of words in the context of a sentence, which is important for sentiment analysis.
+
+- **Transformers:** BERT uses a transformer architecture, which is well-suited for handling long sequences of text data. This makes BERT more effective at handling large and complex text data, which is often the case in sentiment analysis tasks.
+
+Overall, BERT is a powerful tool for sentiment analysis, and its state-of-the-art results and strong performance on various NLP tasks make it a popular choice for sentiment analysis in many industries.
+
+[BERTimbau - Portuguese BERT](https://github.com/neuralmind-ai/portuguese-bert)
 
 
 
