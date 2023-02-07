@@ -84,6 +84,11 @@ Even tough the BERT model presents a wide variety of pros, the reviews been anal
 
 ## **Data visualization**
 
+The data visualization on this project is divided in three diferent places:
+
+[Exploratory data analysis:](https://github.com/viniciusacosta/olist-nlp/blob/main/data_preparation_eda.ipynb) Here is presented a analysis based on the review score, taking into account the product and orders features.
+
+
 
 
 
