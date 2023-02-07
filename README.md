@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/91922356/217281133-4b75ff9f-5d04-4eb4-ba26-a7dfdd223190.png)
+![image](https://user-images.githubusercontent.com/91922356/217281133-4b75ff9f-5d04-4eb4-ba26-a7dfdd223190.png =250x250)
 
 
 ## **Introduction**
@@ -80,9 +80,11 @@ BERT (Bidirectional Encoder Representations from Transformers) is a deep learnin
 
 - **Transformers:** BERT uses a transformer architecture, which is well-suited for handling long sequences of text data. This makes BERT more effective at handling large and complex text data, which is often the case in sentiment analysis tasks.
 
-Overall, BERT is a powerful tool for sentiment analysis, and its state-of-the-art results and strong performance on various NLP tasks make it a popular choice for sentiment analysis in many industries.
+Even tough the BERT model presents a wide variety of pros, the reviews been analized are all in portuguese, so the pre-trained [BERTimbau - Portuguese BERT](https://github.com/neuralmind-ai/portuguese-bert) was the chosen algorithm to be fine-tuned.
 
-[BERTimbau - Portuguese BERT](https://github.com/neuralmind-ai/portuguese-bert)
+## **Data visualization**
+
+
 
 
 
