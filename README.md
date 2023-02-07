@@ -88,6 +88,9 @@ The data visualization on this project is divided in three diferent places:
 
 [Exploratory data analysis:](https://github.com/viniciusacosta/olist-nlp/blob/main/data_preparation_eda.ipynb) Here is presented a analysis based on the review score, taking into account the product and orders features.
 
+[Sales dashboard:](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/Sales_Dashboard_16645471881110/Painel1?publish=yes)
+
+[Sentiment Analysis](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/SentimentAnalysis_16756900808250/sentiment_analysis)
 
 
 
