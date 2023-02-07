@@ -90,7 +90,7 @@ The data visualization on this project is divided in three diferent places:
 
 [Sales dashboard:](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/Sales_Dashboard_16645471881110/Painel1?publish=yes)
 
-[Sentiment Analysis](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/SentimentAnalysis_16756900808250/sentiment_analysis)
+**[Sentiment Analysis Dashboard](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/SentimentAnalysis_16756900808250/sentiment_analysis)**
 
 
 
