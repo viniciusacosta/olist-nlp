@@ -36,7 +36,7 @@ https://github.com/viniciusacosta/olist-nlp/blob/main/olist_reviews.csv
 
 The features of this dataset present information about:
 
-- **Product info:**
+- **Product:**
   - product_category_name
   - product_description_lenght
   - product_photos_qty
@@ -51,14 +51,14 @@ The features of this dataset present information about:
   - order_delivered_customer_date
   - order_estimated_delivery_date
   - order_status
-  - day_diff
+  - day_diff - The amount of days which took the order to be delivered 
    
-- **Customer info:**
+- **Customer:**
   - customer_zip_code_prefix
   - customer_city
   - customer_state 
   
-- **Review info:**
+- **Review:**
   - review_id
   - review_creation_date
   - review_answer_timestamp
@@ -68,7 +68,7 @@ The features of this dataset present information about:
 
 ## **Model**
 
-There are various techniques and algorithms used for sentiment analysis, including rule-based approaches and machine learning algorithms like Naive Bayes, SVM, and deep learning models like BERT and LSTM.
+There are various techniques and algorithms used for sentiment analysis, including rule-based approaches and machine learning algorithms like Naive Bayes, SVM, and deep learning models like BERT and LSTM. But in this project the model choosed was the [BERTimbau - Portuguese BERT](https://github.com/neuralmind-ai/portuguese-bert)
 
 
 
