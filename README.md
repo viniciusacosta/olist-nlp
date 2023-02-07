@@ -30,28 +30,18 @@ The dataset has information of 100k orders from 2016 to 2018 made at multiple ma
         
 ### **Dataframe**
 
-Com 19 colunas de variáveis independentes que indicam as características de clientes de uma empresa fictícia de telecomunicações. A coluna Churn indica se o cliente finalizou ou não suas relações com a empresa a no mínimo um mês. A classe No inclue os clientes no qual continuam utilizando os serviços da companhia no último mês, já a classe Yes contém os clientes que decidiram finalizar suas relaçoes com a empresa.
-
-Cada linha do dataset representa um cliente, sendo cada coluna as informações sobre este cliente.
+The dataframe used on the model training was created using the SQL language. With 22 columns of independent variables that indicate the characteristics of different orders reviews. Each row of the dataset represents an order, each column being the informations about this order.
 
 https://github.com/viniciusacosta/olist-nlp/blob/main/olist_reviews.csv
 
-The dataframe used in this project was created using the SQL language, where the following datasets were grouped:
+The features of this dataset present information about:
 
-- **olist_products_dataset**       
-- **olist_order_items_dataset** 
-- **olist_orders_dataset** 
-- **olist_order_reviews_dataset** 
-- **olist_customers_dataset**
-
-The
-
-- Product info:
-  - product_vategory_name
+- **Product info:**
+  - product_category_name
   - product_description_lenght
   - product_photos_qty
 
-- Order:
+- **Order:**
   - price
   - freight_value 
   - shipping_limit_date
@@ -63,19 +53,22 @@ The
   - order_status
   - day_diff
    
-- Customer info:
+- **Customer info:**
   - customer_zip_code_prefix
   - customer_city
   - customer_state 
-  -
-- Review info:
-  - review_id 
+  
+- **Review info:**
   - review_id
   - review_creation_date
   - review_answer_timestamp
   - review_score
   - review_comment_title
   - review_comment_message
+
+## **Model**
+
+There are various techniques and algorithms used for sentiment analysis, including rule-based approaches and machine learning algorithms like Naive Bayes, SVM, and deep learning models like BERT and LSTM.
 
 
 
