@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/91922356/217281133-4b75ff9f-5d04-4eb4-ba26-a7dfdd223190.png =250x250)
+![image](https://user-images.githubusercontent.com/91922356/217281133-4b75ff9f-5d04-4eb4-ba26-a7dfdd223190.png)
 
 
 ## **Introduction**
@@ -16,21 +16,21 @@ With the widespread use of the internet and social media, customers now have a l
 
 With its ability to provide valuable insights into customer opinions, sentiment analysis is becoming increasingly important for businesses to stay ahead in a highly competitive market.
 
-## **Dataset**
-The dataset used in this project is available on the Kaggle platform:
+## **Database**
+The database used in this project is available on the Kaggle platform:
 
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 *This dataset was generously provided by Olist, the largest department store in Brazilian marketplaces. Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners. See more on our website: www.olist.com*
 
-The dataset has information of 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allows viewing an order from multiple dimensions: from order status, price, payment and freight performance to customer location, product attributes and finally reviews written by customers. 
+The database has information of 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allows viewing an order from multiple dimensions: from order status, price, payment and freight performance to customer location, product attributes and finally reviews written by customers. 
 
 ### **Data Schema** 
 ![image](https://user-images.githubusercontent.com/91922356/217290625-1d47e8e8-3a4b-4485-b2ac-f61cc4ca35b2.png)         
         
-### **Dataframe**
+### **Dataset**
 
-The dataframe used on the model training was created using the SQL language. With 22 columns of independent variables that indicate the characteristics of different orders reviews. Each row of the dataset represents an order, each column being the informations about this order.
+The dataset used on the model training was created using the SQL language. With 22 columns of independent variables that indicate the characteristics of different orders reviews. Each row of the dataset represents an order, each column being the informations about this order.
 
 https://github.com/viniciusacosta/olist-nlp/blob/main/olist_reviews.csv
 
@@ -86,25 +86,8 @@ Even tough the BERT model presents a wide variety of pros, the reviews been anal
 
 The data visualization on this project is divided in three diferent places:
 
-[Exploratory data analysis:](https://github.com/viniciusacosta/olist-nlp/blob/main/data_preparation_eda.ipynb) Here is presented a analysis based on the review score, taking into account the product and orders features.
+**- [Exploratory data analysis:](https://github.com/viniciusacosta/olist-nlp/blob/main/data_preparation_eda.ipynb)** Here is presented a analysis based on the review score, taking into account the product and orders features.
 
-[Sales dashboard:](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/Sales_Dashboard_16645471881110/Painel1?publish=yes)
+**- [Sales dashboard:](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/Sales_Dashboard_16645471881110/Painel1?publish=yes)** Dashboard with the the information of all the sales on the database 
 
-**[Sentiment Analysis Dashboard](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/SentimentAnalysis_16756900808250/sentiment_analysis)**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**- [Sentiment Analysis Dashboard:](https://public.tableau.com/app/profile/vinicius.de.andrade.costa/viz/SentimentAnalysis_16756900808250/sentiment_analysis)** Dashboard showing information about the orders, their review scores and finally the result of the sentiment analysis model.
