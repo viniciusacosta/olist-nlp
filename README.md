@@ -17,9 +17,7 @@ With the widespread use of the internet and social media, customers now have a l
 With its ability to provide valuable insights into customer opinions, sentiment analysis is becoming increasingly important for businesses to stay ahead in a highly competitive market.
 
 ## **Database**
-The database used in this project is available on the Kaggle platform:
-
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+The [database](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) used in this project is available on the Kaggle platform:
 
 *This dataset was generously provided by Olist, the largest department store in Brazilian marketplaces. Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners. See more on our website: www.olist.com*
 
@@ -30,9 +28,7 @@ The database has information of 100k orders from 2016 to 2018 made at multiple m
         
 ### **Dataset**
 
-The dataset used on the model training was created using the SQL language. With 22 columns of independent variables that indicate the characteristics of different orders reviews. Each row of the dataset represents an order, each column being the informations about this order.
-
-https://github.com/viniciusacosta/olist-nlp/blob/main/olist_reviews.csv
+The [dataset](https://github.com/viniciusacosta/olist-nlp/blob/main/olist_reviews.csv) used on the model training was created using the SQL language. With 22 columns of independent variables that indicate the characteristics of different orders reviews. Each row of the dataset represents an order, each column being the informations about this order.
 
 The features of this dataset present information about:
 
